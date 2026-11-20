@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gol de Placa | Cruzadinha ARQCOMP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="topo">
+        <div class="barra">
+            <div class="marca">
+                <svg class="escudo" viewBox="0 0 48 54" aria-hidden="true"><path d="M24 2 45 10v19c0 10-9 17-21 23C12 46 3 39 3 29V10Z" fill="#1b7046" stroke="#f2cf76" stroke-width="2.5"/><circle cx="24" cy="26" r="13" fill="#fff"/><path d="m24 20 6 4-2 7h-8l-2-7Z M24 13v7m12 2-6 2m2 12-4-5m-12 5 4-5M12 22l6 2" stroke="#13271e" stroke-width="2" fill="#13271e"/></svg>
+                <div><strong>GOL DE PLACA</strong><span>ARQUITETURA COMPUTACIONAL</span></div>
+            </div>
+            <div class="etapa"><span class="etapa-dot"></span> MODO TREINO <span class="etapa-separador">/</span> SPRINT 03</div>
+        </div>
+    </header>
+    <main class="pagina">
+        <section class="introducao">
+            <div class="chamada">
+                <span class="chapeu"><i></i> DESAFIO DE ARQUITETURA COMPUTACIONAL</span>
+                <h1>Entre em campo.<br><em>Faça um gol de placa.</em></h1>
+                <p>Decifre as pistas de hardware e complete a cruzadinha.<br class="quebra"> Cada palavra certa vale um gol.</p>
+                <div class="metadados"><span>16 TERMOS</span><span>•</span><span>1 DESAFIO</span></div>
+            </div>
+            <div class="placar">
+                <span class="placar-titulo"><span class="ponto"></span> PLACAR DA PARTIDA</span>
+                <div class="placar-numeros"><div><span>SEUS GOLS</span><strong id="acertos">00</strong></div><span class="versus">:</span><div><span>META</span><strong>16</strong></div></div>
+                <div class="progresso" role="progressbar" aria-label="Palavras corretas" aria-valuemin="0" aria-valuemax="16" aria-valuenow="0"><div id="barra-progresso"></div></div>
+                <p id="contador" aria-live="polite">0 de 16 palavras</p>
+            </div>
+        </section>
+        <section class="jogo" aria-label="Jogo de cruzadinha">
+            <div class="painel painel-campo">
+                <div class="cabecalho-painel"><div><span class="mini">01 — O CAMPO</span><h2>Seu tabuleiro</h2></div><span class="quantidade"><span class="ponto"></span> 16 palavras</span></div>
+                <div class="campo-scroll">
+                    <div class="campo">
+                        <div class="linhas-campo" aria-hidden="true"><div class="linha-meio"></div><div class="circulo-meio"></div><div class="area area-esquerda"></div><div class="area area-direita"></div><div class="pequena-area esquerda"></div><div class="pequena-area direita"></div><div class="ponto-centro"></div></div>
+                        <div id="tabuleiro" class="tabuleiro" aria-label="Tabuleiro de 12 linhas e 16 colunas"></div>
+                    </div>
+                </div>
+                <div class="bloco-pista"><span class="mini">PISTA SELECIONADA</span><div class="pista-ativa" id="pista-ativa" aria-live="polite">Clique em uma pista ou casa para começar.</div></div>
+                <div class="acoes">
+                    <button id="conferir" class="botao principal" type="button"><span aria-hidden="true">✓</span> Conferir respostas</button>
+                    <button id="reiniciar" class="botao secundario" type="button"><span aria-hidden="true">↻</span> Reiniciar</button>
+                </div>
+                <p id="mensagem" class="mensagem" role="status">A partida começou! Use as setas do teclado para navegar.</p>
+                <div class="legenda"><span><i class="amostra certa"></i> Certa</span><span><i class="amostra errada"></i> Errada</span><span><i class="amostra pendente"></i> Incompleta</span></div>
+            </div>
+            <aside class="painel painel-pistas">
+                <div class="cabecalho-painel"><div><span class="mini">02 — A PRANCHETA</span><h2>Pistas do técnico</h2></div></div>
+                <p class="ajuda">Selecione uma pista para posicionar as letras no campo. Role a lista para ver todas.</p>
+                <div class="listas-pistas">
+                    <section><h3><span aria-hidden="true">→</span> Horizontais</h3><div id="horizontais" class="pistas"></div></section>
+                    <section><h3><span aria-hidden="true">↓</span> Verticais</h3><div id="verticais" class="pistas"></div></section>
+                </div>
+            </aside>
+        </section>
+        <footer><strong>GOL DE PLACA</strong><span>Arquitetura Computacional · Sprint 3</span><span>HTML · CSS · JS</span></footer>
+    </main>
+</body>
+</html>
