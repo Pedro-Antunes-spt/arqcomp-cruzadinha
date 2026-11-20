@@ -1,21 +1,21 @@
 // As coordenadas começam em zero. H = horizontal, V = vertical.
 const palavras = [
-    {"numero": 1, "resposta": "REGISTRADORES", "linha": 0, "coluna": 0, "direcao": "H", "pista": "Pequenas áreas internas do processador que guardam temporariamente operandos e resultados imediatos."},
-    {"numero": 2, "resposta": "DUALCORE", "linha": 0, "coluna": 8, "direcao": "V", "pista": "Processador com dois núcleos de execução, como uma dupla em campo."},
-    {"numero": 3, "resposta": "DATABUS", "linha": 1, "coluna": 13, "direcao": "V", "pista": "Conjunto de linhas que transporta informações entre processador, memória e periféricos."},
-    {"numero": 4, "resposta": "CACHE", "linha": 2, "coluna": 7, "direcao": "H", "pista": "Área rápida próxima ao processador que guarda informações usadas frequentemente."},
-    {"numero": 5, "resposta": "UC", "linha": 3, "coluna": 3, "direcao": "H", "pista": "Como árbitro, coordena a execução das instruções dentro do processador."},
-    {"numero": 6, "resposta": "CPU", "linha": 3, "coluna": 4, "direcao": "V", "pista": "Principal componente que executa instruções e processa dados no computador."},
-    {"numero": 7, "resposta": "FLASH", "linha": 4, "coluna": 11, "direcao": "H", "pista": "Tecnologia não volátil usada em pendrives, apagada eletricamente em blocos."},
-    {"numero": 8, "resposta": "QUADCORE", "linha": 5, "coluna": 3, "direcao": "H", "pista": "Processador com quatro núcleos de execução, como uma linha defensiva de quatro jogadores."},
-    {"numero": 9, "resposta": "EEPROM", "linha": 6, "coluna": 15, "direcao": "V", "pista": "Tipo de armazenamento não volátil que permite apagar e regravar bytes eletricamente."},
-    {"numero": 10, "resposta": "ROM", "linha": 7, "coluna": 0, "direcao": "H", "pista": "Armazenamento não volátil projetado apenas para leitura durante o funcionamento normal."},
-    {"numero": 10, "resposta": "RAM", "linha": 7, "coluna": 0, "direcao": "V", "pista": "Espaço de trabalho temporário dos aplicativos, que perde dados ao desligar."},
-    {"numero": 11, "resposta": "ADDRESSBUS", "linha": 7, "coluna": 4, "direcao": "H", "pista": "Conjunto de linhas que indica onde uma informação deve ser lida ou gravada."},
-    {"numero": 12, "resposta": "ULA", "linha": 7, "coluna": 12, "direcao": "V", "pista": "Setor do processador responsável por operações matemáticas e comparações lógicas."},
-    {"numero": 13, "resposta": "MICROCONTROLADOR", "linha": 9, "coluna": 0, "direcao": "H", "pista": "Pequeno chip que reúne processamento, armazenamento interno e interfaces para comandar dispositivos."},
-    {"numero": 14, "resposta": "DMA", "linha": 9, "coluna": 13, "direcao": "V", "pista": "Como um passe direto, transfere dados entre periféricos e memória sem intervenção contínua do processador."},
-    {"numero": 15, "resposta": "MEMORIADEMASSA", "linha": 11, "coluna": 0, "direcao": "H", "pista": "Armazenamento de longo prazo para arquivos, como vídeos das partidas, usando HD ou SSD."}
+    { "numero": 1, "resposta": "REGISTRADORES", "linha": 0, "coluna": 0, "direcao": "H", "pista": "Pequenas áreas internas do processador que guardam temporariamente operandos e resultados imediatos." },
+    { "numero": 2, "resposta": "DUALCORE", "linha": 0, "coluna": 8, "direcao": "V", "pista": "Processador com dois núcleos de execução, como uma dupla em campo." },
+    { "numero": 3, "resposta": "DATABUS", "linha": 1, "coluna": 13, "direcao": "V", "pista": "Conjunto de linhas que transporta informações entre processador, memória e periféricos." },
+    { "numero": 4, "resposta": "CACHE", "linha": 2, "coluna": 7, "direcao": "H", "pista": "Área rápida próxima ao processador que guarda informações usadas frequentemente." },
+    { "numero": 5, "resposta": "UC", "linha": 3, "coluna": 3, "direcao": "H", "pista": "Como árbitro, coordena a execução das instruções dentro do processador." },
+    { "numero": 6, "resposta": "CPU", "linha": 3, "coluna": 4, "direcao": "V", "pista": "Principal componente que executa instruções e processa dados no computador." },
+    { "numero": 7, "resposta": "FLASH", "linha": 4, "coluna": 11, "direcao": "H", "pista": "Tecnologia não volátil usada em pendrives, apagada eletricamente em blocos." },
+    { "numero": 8, "resposta": "QUADCORE", "linha": 5, "coluna": 3, "direcao": "H", "pista": "Processador com quatro núcleos de execução, como uma linha defensiva de quatro jogadores." },
+    { "numero": 9, "resposta": "EEPROM", "linha": 6, "coluna": 15, "direcao": "V", "pista": "Tipo de armazenamento não volátil que permite apagar e regravar bytes eletricamente." },
+    { "numero": 10, "resposta": "ROM", "linha": 7, "coluna": 0, "direcao": "H", "pista": "Armazenamento não volátil projetado apenas para leitura durante o funcionamento normal." },
+    { "numero": 10, "resposta": "RAM", "linha": 7, "coluna": 0, "direcao": "V", "pista": "Espaço de trabalho temporário dos aplicativos, que perde dados ao desligar." },
+    { "numero": 11, "resposta": "ADDRESSBUS", "linha": 7, "coluna": 4, "direcao": "H", "pista": "Conjunto de linhas que indica onde uma informação deve ser lida ou gravada." },
+    { "numero": 12, "resposta": "ULA", "linha": 7, "coluna": 12, "direcao": "V", "pista": "Setor do processador responsável por operações matemáticas e comparações lógicas." },
+    { "numero": 13, "resposta": "MICROCONTROLADOR", "linha": 9, "coluna": 0, "direcao": "H", "pista": "Pequeno chip que reúne processamento, armazenamento interno e interfaces para comandar dispositivos." },
+    { "numero": 14, "resposta": "DMA", "linha": 9, "coluna": 13, "direcao": "V", "pista": "Como um passe direto, transfere dados entre periféricos e memória sem intervenção contínua do processador." },
+    { "numero": 15, "resposta": "MEMORIADEMASSA", "linha": 11, "coluna": 0, "direcao": "H", "pista": "Armazenamento de longo prazo para arquivos, como vídeos das partidas, usando HD ou SSD." }
 ];
 
 const tabuleiro = document.getElementById('tabuleiro');
@@ -122,7 +122,7 @@ function moverNaPalavra(chave, direcao) {
 }
 
 function navegar(evento, chave) {
-    const setas = { ArrowLeft: [0,-1], ArrowRight: [0,1], ArrowUp: [-1,0], ArrowDown: [1,0] };
+    const setas = { ArrowLeft: [0, -1], ArrowRight: [0, 1], ArrowUp: [-1, 0], ArrowDown: [1, 0] };
     if (setas[evento.key]) {
         evento.preventDefault();
         const [linha, coluna] = chave.split('-').map(Number);
