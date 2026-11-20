@@ -36,8 +36,3 @@ Cruzadinha de Arquitetura Computacional com tema de futebol, feita com HTML, CSS
 - `style.css`: identidade visual e adaptação das telas.
 - `script.js`: dados das palavras, tabuleiro e regras do jogo.
 
-## Site publicado
-
-Link: a preencher após a publicação no GitHub Pages.
-
-Crie o repositório público `arqcomp-cruzadinha` e use Settings → Pages → Deploy from a branch → main → / (root). Atualize este README com o link real e teste-o em uma janela anônima. A atividade pede pelo menos seis commits reais de desenvolvimento distribuídos em dois ou mais dias. Revise e adapte as pistas com suas próprias palavras e com o e-book da disciplina.
